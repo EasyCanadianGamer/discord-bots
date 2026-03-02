@@ -24,11 +24,10 @@ async function main() {
       continue;
     }
 
-    // Look up token — try discord_name first (supports spaces), fall back to file name
-    const tokenKey = persona.discord_name ?? botName;
-    const token = keys.discord?.[tokenKey] ?? keys.discord?.[botName];
+    // Look up token from keys.json
+    const token = keys.discord?.[botName];
     if (!token || token.startsWith('YOUR_')) {
-      console.warn(`[${botName}] No token in keys.json for "${tokenKey}" — skipping.`);
+      console.warn(`[${botName}] No token in keys.json (discord.${botName}) — skipping.`);
       continue;
     }
 

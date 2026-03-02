@@ -1,0 +1,9 @@
+{
+  "discord": {
+    "alice": "DISCORD_TOKEN",
+    "bob": "DISCORD_TOKEN"
+
+  },
+  "openai": "YOUR_OPENAI_API_KEY",
+  "grok": "YOUR_GROK_AI_KEY"
+}

@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-const keys = JSON.parse(readFileSync('./keys.json', 'utf-8'));
+const keys   = JSON.parse(readFileSync('./keys.json',  'utf-8'));
 const config = JSON.parse(readFileSync('./config.json', 'utf-8'));
 
 export async function chat(messages, persona) {
