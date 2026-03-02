@@ -1,0 +1,12 @@
+{
+  "name": "discord-bots",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.js",
+    "dev": "bun --watch src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
+}

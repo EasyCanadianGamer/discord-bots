@@ -1,0 +1,29 @@
+{
+  "provider": "grok",
+
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "model": "llama3.2"
+  },
+
+  "openai": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-4o-mini"
+  },
+
+  "grok": {
+    "base_url": "https://api.x.ai/v1",
+    "model": "grok-4-0709"
+  },
+
+"bots": ["alice", "femboycanadian", "femboyzyl0"],
+
+  "conversation": {
+    "mode": "mention_only",
+    "allowed_channels": [],
+    "respond_to_bots": true,
+    "max_bot_chain": 4,
+    "max_history": 20,
+    "typing_indicator": true
+  }
+}
